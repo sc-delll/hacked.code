@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<!---░ ░░░░██╗████████╗███████╗  ███████╗██╗██╗░░░░░███╗░░░███╗░██████╗
+      ░░░░░██║╚══██╔══╝██╔════╝  ██╔════╝██║██║░░░░░████╗░████║██╔════╝
+      ░░░░░██║░░░██║░░░█████╗░░  █████╗░░██║██║░░░░░██╔████╔██║╚█████╗░
+      ██╗░░██║░░░██║░░░██╔══╝░░  ██╔══╝░░██║██║░░░░░██║╚██╔╝██║░╚═══██╗
+      ╚█████╔╝░░░██║░░░███████╗  ██║░░░░░██║███████╗██║░╚═╝░██║██████╔╝
+      ░╚════╝░░░░╚═╝░░░╚══════╝  ╚═╝░░░░░╚═╝╚══════╝╚═╝░░░░░╚═╝╚═════╝░──
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⣠⣤⣤⣄⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠤⠖⠊⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠲⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡤⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⡜⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢢⠀⠀⠀⠀⠀⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠱⡀⠀⠀⠀⠀⠀⠀⠀⡀⠈⠀⡀⠀⠀⠀⠈⡇⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⠀⠀⠀⠀⠀⠀⠀⠘⡆⡜⠁⠀⠀⠀⠀⢧⡀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠸⡀⠀⠀⠀⠀⠀⣀⣤⡂⠀⠇⠱⠀⡀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢇⠀⠀⠀⠀⠀⠀⠀⠀⠈⢄⡀⢠⣟⢭⣥⣤⠽⡆⠀⡶⣊⣉⣲⣤⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠘⣆⠀⠀⠀⠀⠀⠀⡀⠀⠐⠂⠘⠄⣈⣙⡡⡴⠀⠀⠙⣄⠙⣛⠜⠘⣆⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⢦⡀⠀⠀⠀⢸⠁⠀⠀⠀⠀⠀⠀⠄⠊⠀⠀⠀⠀⡸⠛⠀⠀⠀⢸⠆⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠈⠓⠦⢄⣘⣄⠀⠀⠀⠀⠀⠀⠀⡠⠀⠀⠀⠀⣇⡀⠀⠀⣠⠎⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠁⠈⡟⠒⠲⣄⠀⠀⡰⠇⠖⢄⠀⠀⡹⡇⢀⠎⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡇⠀⠀⡇⠀⠀⠹⠀⡞⠀⠀⢀⠤⣍⠭⡀⢱⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢀⣀⣀⣠⠞⠀⠀⢠⡇⠀⠀⠀⠀⠁⠀⢴⠥⠤⠦⠦⡼⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣀⣤⣴⣶⣿⣿⡟⠁⠀⠋⠀⠀⠀⢸⠁⠀⠀⠀⠀⠀⠀⠀⠑⣠⢤⠐⠁⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠬⠥⣄⠀⠀⠈⠲⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⠀⠀⢀⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠒⠦⠤⢤⣄⣀⣠⠤⢿⣶⣶⣿⣿⣿⣶⣤⡀⠀⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡼⠁⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠀⠀
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣤⣤⣀⣀⣀⣀⣀⣀⣀⣤⣤⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿──-->
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>JTE films</title>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+      <link rel="icon" href="images (2).png">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+  </head>
+    <body>
+	  
+        <div class="container">
+	  
+		<!--────────────────Header───────────────-->
+	<header>
+		<a class="logo" href="#home">
+              <img src="images (2).png" alt="hacked logo" />
+		</a>
+		<nav>	
+		 <ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link active" href="#home">Home</a></li>
+			<li><a class="nav-link" href="#projects">Projects</a></li>
+			<li><a class="nav-link" href="https://www.bonfire.com/store/jte-films-cool-merch/">Merch</a></li>
+			 <li><a class="nav-link" href="photo.html">photography</a></li>
+		 </ul>
+			
+			<div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!--─────────────────Home────────────────-->
+	  <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+		  <h3>JTE Films<hr></h3>
+		  
+		
+			  
+		  <!--────social media links─────-->
+			 
+		  <div class="social-media">
+		
+			
+			  <a href="https://github.com/sc-delll" target="_blank"><i class='fab fa-github'></i></a>
+			
+			  <a href="https://www.youtube.com/c/jtefilms/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+		    </div>
+			 
+		 </section> 
+	  </div>  
+		
+	  <!--───────────────Projects───────────────-->
+	  <div id="projects"> 
+		 <h3> projects <hr></h3>
+		  <p>Here are some of my projects you may like.</p>
+		  <div class="work-box">
+		  <div class="work">
+		<!--───────────────card───────────────-->
+			<div class="card">
+			    <img class="work-img" src="AgentK1d1.png">
+			    <a href="https://youtu.be/FhJa9QZ7-d4" target="_blank"> <!--Link to project-->
+				<div class="work-content">Agent K1D.</div></a>
+            </div>
+			<div class="card">
+			    <img class="work-img" src="Screenshot 2021-06-03 202333.png">
+				<a href="https://www.youtube.com/watch?v=KE0aChnK1wk" target="_blank"> <!--Link to project-->
+				<div class="work-content">Canned water</div></a>
+            </div>
+            <div class="card">
+			    <img class="work-img" src="sillybilly1.png">
+				<a href="https://www.youtube.com/watch?v=BpuC_uEmkAk" target="_blank"> <!--Link to project-->
+				<div class="work-content">Silly billy</div></a>
+            </div>
+            <div class="card">
+			    <img class="work-img" src="butler1.png">
+				<a href="https://www.youtube.com/watch?v=zBv0R4Fcrso" target="_blank"> <!--Link to project-->
+				<div class="work-content">The butler</div></a>
+            </div> 
+
+            </div> 	  
+		  </div>
+		  </div>
+	  </div>
+		 
+
+	</main>
+	  <footer class="copyright">©JTE2020 
+		  
+		  
+  <h3>      ██╗░░██║░░░██║░░░██╔══╝░░  ██╔══╝░░██║██║░░░░░
+      ╚█████╔╝░░░██║░░░███████╗  ██║░░░░░██║███████╗██║░
+      ░╚════╝░░░░╚═╝░░░╚══════╝  ╚═╝░░░░░╚═╝╚══════╝╚═<hr></h3>
+
+     </footer>
+	  
+  </div>
+  </body>
+</html>
